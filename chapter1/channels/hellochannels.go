@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"sync"
+	"time"
 )
 
 var wg sync.WaitGroup
@@ -11,6 +12,8 @@ func printer(ch chan int) {
 	for i := range ch {
 		fmt.Printf("Received %d ", i)
 	}
+	time.Sleep(3 * time.Second)
+	fmt.Println("All Done")
 	wg.Done()
 }
 
