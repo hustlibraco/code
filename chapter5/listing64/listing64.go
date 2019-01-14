@@ -5,7 +5,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/goinaction/code/chapter5/listing64/counters"
+	"github.com/hustlibraco/code/chapter5/listing64/counters"
 )
 
 // main is the entry point for the application.
