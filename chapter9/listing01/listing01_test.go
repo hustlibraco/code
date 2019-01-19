@@ -12,7 +12,7 @@ const ballotX = "\u2717"
 // TestDownload validates the http Get function can download content.
 func TestDownload(t *testing.T) {
 	url := "http://www.goinggo.net/feeds/posts/default?alt=rss"
-	statusCode := 200
+	statusCode := 404
 
 	t.Log("Given the need to test downloading content.")
 	{
